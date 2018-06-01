@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1518068956">
+  <File Type="PA-TCL" Name="Nexys4_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Nexys4_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Nexys4_top.vds"/>
+  <File Type="RDS-UTIL" Name="Nexys4_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Nexys4_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Nexys4_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Nexys4_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Nexys4_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/BCD_converter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ACL/sources_1/new/BCD_converter.v"/>
+        <Attr Name="ImportTime" Val="1515391560"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HC_SR04_interface.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ACL/sources_1/debounce.v"/>
+        <Attr Name="ImportTime" Val="1515391534"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/sevensegment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ACL/sources_1/sevensegment.v"/>
+        <Attr Name="ImportTime" Val="1515391888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Nexys4_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Nexys4_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ACL/project_cam/project_cam.srcs/constrs_1/imports/project1_release/n4DDRfpga_withvideo.xdc"/>
+        <Attr Name="ImportTime" Val="1515200846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
